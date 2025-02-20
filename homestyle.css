@@ -42,7 +42,7 @@ header {
   padding: 10px 20px;
   background-color: black;
   position: relative;
-  top: -50px; /* Adjust this value to position the menu under the header */
+  top: 200px; /* Adjust this value to position the menu under the header */
 }
 
 .nav-links {
