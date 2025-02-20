@@ -42,7 +42,7 @@ header {
   padding: 10px 20px;
   background-color: black;
   position: relative;
-  top: 100px; /* Adjust this value to position the menu under the header */
+  top: 50px; /* Adjust this value to position the menu under the header */
 }
 
 .nav-links {
@@ -106,7 +106,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #f5f5dc;
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
@@ -126,4 +126,13 @@ header {
 .card-image img {
   max-width: 100%;
   border-radius: 10px;
+}
+
+/* Reverse Card Styling */
+.reverse-card {
+  flex-direction: row-reverse;
+}
+
+.reverse-card .card-text {
+  text-align: right;
 }
