@@ -11,24 +11,25 @@ body, h1, h2, h3, h4, p {
     line-height: 1.6;
     color: #ffffff;
     text-align: center;
-    background-image: url('place.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%; /* Ensures the background covers the full height */
+ 
   }
   
   /* Header Styling */
   header {
+    background-image: url('place.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
     color: #ffffff;
-    border-bottom: 2px solid;
     text-align: center;
     padding: 1em 0;
+
   }
   
   .main-heading {
     font-family: 'Playfair Display', serif;
-    font-size: 3rem;
+    font-size: 6rem;
     font-weight: 700;
     margin-bottom: 0.5em;
     color: #ffffff;
@@ -45,6 +46,7 @@ body, h1, h2, h3, h4, p {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    position: center;
   }
   
   .nav-links {
@@ -101,5 +103,6 @@ body, h1, h2, h3, h4, p {
   .foreground {
     position: relative; /* Required for z-index to work */
     z-index: 1; /* Bring the item in front of the background */
-  
+  }
+
   
