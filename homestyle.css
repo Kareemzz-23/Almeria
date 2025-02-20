@@ -1,108 +1,102 @@
 /* General Reset */
 body, h1, h2, h3, h4, p {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body Styling */
-  body {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
-    color: #ffffff;
-    text-align: center;
- 
-  }
-  
-  /* Header Styling */
-  header {
-    background-image: url('place.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 200px;
-    color: #ffffff;
-    text-align: center;
-    padding: 1em 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  }
-  
-  .main-heading {
-    font-family: 'Playfair Display', serif;
-    font-size: 6rem;
-    font-weight: 700;
-    margin-bottom: 0.5em;
-    color: #ffffff;
-  }
-  
-  /* Navigation Styling */
-  /* Base styles */
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: center;
-  }
-  
+/* Body Styling */
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Header Styling */
+header {
+  background-image: url('place.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.main-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 6rem;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  color: #ffffff;
+}
+
+/* Navigation Styling */
+/* Base styles */
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+  position: relative;
+  top: -50px; /* Adjust this value to position the menu under the header */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #d1a481;
+}
+
+/* Hamburger menu styles */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
   .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links li a:hover {
-    color: #d1a481;
-  }
-  
-  /* Hamburger menu styles */
-  .hamburger-menu {
     display: none;
     flex-direction: column;
-    cursor: pointer;
-  }
-  
-  .hamburger-menu span {
-    height: 3px;
-    width: 25px;
-    background-color: white;
-    margin: 4px 0;
-    transition: all 0.3s ease;
-  }
-  
-  /* Media query for mobile devices */
-  @media (max-width: 768px) {
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      text-align: center;
-    }
-  
-    .nav-links.active {
-      display: flex;
-    }
-  
-    .hamburger-menu {
-      display: flex;
-    }
-  }
-  
-  /* Foreground items */
-  .foreground {
-    position: relative; /* Required for z-index to work */
-    z-index: 1; /* Bring the item in front of the background */
+    width: 100%;
+    text-align: center;
   }
 
-  
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+}
+
+/* Foreground items */
+.foreground {
+  position: relative; /* Required for z-index to work */
+  z-index: 1; /* Bring the item in front of the background */
+}
