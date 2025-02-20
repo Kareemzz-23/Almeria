@@ -42,7 +42,7 @@ header {
   padding: 10px 20px;
   background-color: black;
   position: relative;
-  top: 200px; /* Adjust this value to position the menu under the header */
+  top: 100px; /* Adjust this value to position the menu under the header */
 }
 
 .nav-links {
@@ -99,4 +99,31 @@ header {
 .foreground {
   position: relative; /* Required for z-index to work */
   z-index: 1; /* Bring the item in front of the background */
+}
+
+/* Card Styling */
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.card-text {
+  flex: 1;
+  text-align: left;
+  color: white;
+}
+
+.card-image {
+  flex: 1;
+  text-align: right;
+}
+
+.card-image img {
+  max-width: 100%;
+  border-radius: 10px;
 }
