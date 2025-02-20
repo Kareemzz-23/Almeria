@@ -3,122 +3,103 @@ body, h1, h2, h3, h4, p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Body Styling */
-body {
+  }
+  
+  /* Body Styling */
+  body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     color: #ffffff;
     text-align: center;
-}
-
-/* Header Styling */
-header {
+    background-image: url('place.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%; /* Ensures the background covers the full height */
+  }
+  
+  /* Header Styling */
+  header {
     color: #ffffff;
     border-bottom: 2px solid;
     text-align: center;
     padding: 1em 0;
-}
-
-.main-heading {
+  }
+  
+  .main-heading {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 0.5em;
     color: #ffffff;
-}
-
-
-/* Navigation Styling */
-/* Base styles */
-body {
+  }
+  
+  /* Navigation Styling */
+  /* Base styles */
+  body {
     font-family: Arial, sans-serif;
-}
-
-.navigation {
+  }
+  
+  .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-}
-
-.nav-links {
+  }
+  
+  .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
-}
-
-.nav-links li a {
+  }
+  
+  .nav-links li a {
     text-decoration: none;
     color: white;
     font-weight: 600;
     transition: color 0.3s ease;
-}
-
-.nav-links li a:hover {
+  }
+  
+  .nav-links li a:hover {
     color: #d1a481;
-}
-
-/* Hamburger menu styles */
-.hamburger-menu {
+  }
+  
+  /* Hamburger menu styles */
+  .hamburger-menu {
     display: none;
     flex-direction: column;
     cursor: pointer;
-}
-
-.hamburger-menu span {
+  }
+  
+  .hamburger-menu span {
     height: 3px;
     width: 25px;
     background-color: white;
     margin: 4px 0;
     transition: all 0.3s ease;
-}
-
-/* Media query for mobile devices */
-@media (max-width: 768px) {
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
     .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
     }
-
+  
     .nav-links.active {
-        display: flex;
+      display: flex;
     }
-
+  
     .hamburger-menu {
-        display: flex;
+      display: flex;
     }
-}
-
-
-
-
-
-
-
-body {
-    background-image: url('place.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative; /* Required for z-index to work */
-    z-index: -1; /* Push the background image behind */
   }
   
   /* Foreground items */
   .foreground {
     position: relative; /* Required for z-index to work */
     z-index: 1; /* Bring the item in front of the background */
-  }
   
-
-.center-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
+  
