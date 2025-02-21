@@ -42,7 +42,7 @@ header {
   padding: 10px 20px;
   background-color: black;
   position: relative;
-  top: 50px; /* Adjust this value to position the menu under the header */
+  top: 15px; 
 }
 
 .nav-links {
@@ -106,7 +106,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f5f5dc;
+  background-color: #d1a481;
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
