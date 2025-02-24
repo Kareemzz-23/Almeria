@@ -164,8 +164,7 @@ header {
   border-radius: 10px;
 }
 
-footer-content p {
-  font-size: 1.2rem;
-  margin: 0.5em 0;
+footer-content .footer-text {
+  font-size: 10px;;
   color: #000000;
 }
