@@ -5,6 +5,29 @@ body, h1, h2, h3, h4, p {
   box-sizing: border-box;
 }
 
+.header {
+  animation: slideDown 1s ease-out forwards;
+  transform: translateY(-100%);
+}
+
+@keyframes slideDown {
+  to {
+      transform: translateY(0);
+  }
+}
+
+/* Navigation Animation */
+.nav-links {
+  animation: slideIn 1s ease-out forwards;
+  transform: translateX(-100%);
+}
+
+@keyframes slideIn {
+  to {
+      transform: translateX(0);
+  }
+}
+
 h2 {
   font-size: 2rem;
   margin-bottom: 1em;

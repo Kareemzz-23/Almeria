@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALMERIA</title>
     <link rel="stylesheet" href="homestyle.css">
 </head>
-<header>
-    <h1 class="main-heading">Almeria</h1>
-    </header>
+<script>
+    window.addEventListener('load', function() {
+        document.querySelector('.header').classList.add('slide-down');
+        document.querySelector('.nav-links').classList.add('slide-in');
+    });
+</script>
 <body>
+    <header class="header">
+        <h1 class="main-heading">Almeria</h1>
+    </header>
     <nav class="navigation">
         <div class="hamburger-menu" id="hamburger-menu">
             <span></span>
@@ -22,19 +27,18 @@
             <li><a href="about.html">About</a></li>
             <li><a href="Events.html">Events</a></li>
             <li><a href="menu.html">Menu</a></li>
-            <li><a href="followus.html"></a>Follow us</li>
+            <li><a href="followus.html">Follow us</a></li>
             <li><a href="contact.html">Contact</a></li>
-            
         </ul>
     </nav>
     <script src="scriptnav.js"></script>
     <div class="card">
         <div class="card-text">
             <h2>Fresh and Local</h2>
-            <p>All our dishes and drinks are served fresh, and sourced form local,
+            <p>All our dishes and drinks are served fresh, and sourced from local,
             ethical suppliers. We aim to serve the highest quality of food, while 
             being sustainable, green, healthy and absolutely delicious, which means
-            you can enjoy all our dishes Guilt free !! </p>
+            you can enjoy all our dishes guilt-free!</p>
         </div>
         <div class="card-image">
             <img src="food.jpg" alt="Card Image">
@@ -44,31 +48,34 @@
     <div class="card reverse-card">
         <div class="card-text">
             <h2>Atmosphere</h2>
-            <p>At Almeria, We pride ourselves on our outstanding service and impact in the local
-            creative community. Based in Downtown Cairo, Almeria's atmosphere is reminscent of old
-            cairo life, full with traditional Egyptian chairs and traditional Egyptian food, which is
-            why Almeria is daily frequented by creatives, expats and locals, who wish to experience the 
+            <p>At Almeria, we pride ourselves on our outstanding service and impact in the local
+            creative community. Based in Downtown Cairo, Almeria's atmosphere is reminiscent of old
+            Cairo life, full of traditional Egyptian chairs and traditional Egyptian food, which is
+            why Almeria is daily frequented by creatives, expats, and locals, who wish to experience the 
             true spirit of Egypt. Our establishment also holds many social and creative events for you to
-            enjoy. Our staff are international, friendly and love a good laugh, which means we always bring
-            the good vibes !!</p> 
-            </p>
+            enjoy. Our staff are international, friendly, and love a good laugh, which means we always bring
+            the good vibes!</p>
         </div>
         <div class="card-image">
             <img src="Events.jpg" alt="Card Image">
         </div>
     </div>
-</body>
-<body>
+
     <footer> 
         <div class="footer-content"> 
             <p>&copy; 2025 Almeria-downtown. All Rights Reserved.</p>
-        </div>
-        <div class="social-media"> <a href="https://www.linkedin.com/company/umw-survival-guide/" target="_blank"> <img src="facebook-icon.png" alt="LinkedIn"> </a> 
-        <a href="https://www.instagram.com/umw.survivalguide2025/" target="_blank"> <img src="twitter-icon.png" alt="TikTok"> </a> 
-        <a href="https://www.instagram.com/umw.survivalguide2025/" target="_blank"> <img src="instagram-icon.png" alt="Instagram"></a>
-         </div> 
-       </footer>
+            <div class="social-media"> 
+                <a href="https://www.linkedin.com/company/umw-survival-guide/" target="_blank"> 
+                    <img src="facebook-icon.png" alt="LinkedIn"> 
+                </a> 
+                <a href="https://www.instagram.com/umw.survivalguide2025/" target="_blank"> 
+                    <img src="twitter-icon.png" alt="TikTok"> 
+                </a> 
+                <a href="https://www.instagram.com/umw.survivalguide2025/" target="_blank"> 
+                    <img src="instagram-icon.png" alt="Instagram">
+                </a>
+            </div> 
+        </div> 
+    </footer>
 </body>
-</body> 
-</head>
 </html>
