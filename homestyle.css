@@ -5,6 +5,12 @@ body, h1, h2, h3, h4, p {
   box-sizing: border-box;
 }
 
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
 /* Body Styling */
 body {
   font-family: 'Montserrat', sans-serif;
@@ -112,11 +118,11 @@ header {
   border-radius: 10px;
 }
 
-.card-text p {
+.card-text {
   flex: 1;
   text-align: left;
   color: white;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 .card-image {
@@ -144,6 +150,7 @@ header {
 .reverse-card .card-text {
   text-align: right;
   flex: 1;
+  font-size: 25px
 }
 
 .reverse-card .card-image {
