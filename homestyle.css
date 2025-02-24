@@ -187,7 +187,33 @@ header {
   border-radius: 10px;
 }
 
-footer-content .footer-text {
-  font-size: 10px;;
-  color: #000000;
+/*footer styling*/
+footer {
+  background-color: #333; /* Background color for the footer */
+  color: #fff; /* Default text color for the footer */
+  padding: 20px 0; /* Padding for the footer */
+  text-align: center; /* Center align the text */
+}
+
+.footer-content {
+  max-width: 1200px; /* Maximum width for the footer content */
+  margin: 0 auto; /* Center the footer content */
+  padding: 0 20px; /* Padding for the footer content */
+}
+
+.footer-text {
+  font-size: 14px; /* Font size for the footer text */
+  color: #ffffff; /* Change the text color to red */
+  margin-bottom: 10px; /* Margin below the footer text */
+}
+
+.social-media {
+  display: flex; /* Display the social media icons in a row */
+  justify-content: center; /* Center the social media icons */
+  gap: 10px; /* Space between the social media icons */
+}
+
+.social-media a img {
+  width: 24px; /* Width of the social media icons */
+  height: 24px; /* Height of the social media icons */
 }
