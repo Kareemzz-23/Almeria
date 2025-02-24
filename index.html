@@ -6,12 +6,6 @@
     <title>ALMERIA</title>
     <link rel="stylesheet" href="homestyle.css">
 </head>
-<script>
-    window.addEventListener('load', function() {
-        document.querySelector('.header').classList.add('slide-down');
-        document.querySelector('.nav-links').classList.add('slide-in');
-    });
-</script>
 <body>
     <header class="header">
         <h1 class="main-heading">Almeria</h1>
@@ -31,7 +25,11 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <script src="scriptnav.js"></script>
+    <script>
+        document.getElementById('hamburger-menu').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('active');
+        });
+    </script>
     <div class="card">
         <div class="card-text">
             <h2>Fresh and Local</h2>
@@ -63,7 +61,7 @@
 
     <footer> 
         <div class="footer-content"> 
-            <p class=""footer-text">&copy; 2025 Almeria-downtown. All Rights Reserved.</p>
+            <p class="footer-text">&copy; 2025 Almeria-downtown. All Rights Reserved.</p>
             <div class="social-media"> 
                 <a href="https://www.linkedin.com/company/umw-survival-guide/" target="_blank"> 
                     <img src="facebook-icon.png" alt="LinkedIn"> 
@@ -77,5 +75,10 @@
             </div> 
         </div> 
     </footer>
+    <script>
+        document.getElementById('hamburger-menu').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
