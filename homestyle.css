@@ -123,6 +123,7 @@ header {
   text-align: center;
   color: white;
   font-size: 25px;
+  padding: 7px;
 }
 
 .card-image {
@@ -161,4 +162,10 @@ header {
 .reverse-card .card-image img {
   max-width: 100%;
   border-radius: 10px;
+}
+
+footer-content p {
+  font-size: 1.2rem;
+  margin: 0.5em 0;
+  color: #000000;
 }
