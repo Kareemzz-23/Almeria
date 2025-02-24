@@ -127,6 +127,10 @@ header {
     font-size: 1.2rem; /* Increase the font size for navigation links */
   }
 
+  .main-heading {
+    font-size: 3rem; /* Reduce the font size for the main heading */
+  }
+
   .card, .reverse-card {
     flex-direction: column; /* Stack image on top of text */
     text-align: center;
