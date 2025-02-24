@@ -112,10 +112,11 @@ header {
   border-radius: 10px;
 }
 
-.card-text {
+.card-text p {
   flex: 1;
   text-align: left;
   color: white;
+  font-size: 18px;
 }
 
 .card-image {
@@ -130,9 +131,27 @@ header {
 
 /* Reverse Card Styling */
 .reverse-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d1a481;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
   flex-direction: row-reverse;
 }
 
 .reverse-card .card-text {
   text-align: right;
+  flex: 1;
+}
+
+.reverse-card .card-image {
+  flex: 1;
+  text-align: left;
+}
+
+.reverse-card .card-image img {
+  max-width: 100%;
+  border-radius: 10px;
 }
