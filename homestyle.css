@@ -203,7 +203,7 @@ footer {
 
 .footer-text {
   font-size: 14px; /* Font size for the footer text */
-  color: #ffffff; /* Change the text color to red */
+  color: #000000; /* Change the text color to red */
   margin-bottom: 10px; /* Margin below the footer text */
 }
 
