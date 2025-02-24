@@ -113,8 +113,8 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #d1a481;
-  padding: 20px;
-  margin: 20px;
+  padding: 30px;
+  margin: 30px;
   border-radius: 10px;
 }
 
@@ -141,8 +141,8 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #d1a481;
-  padding: 20px;
-  margin: 20px;
+  padding: 30px;
+  margin: 30px;
   border-radius: 10px;
   flex-direction: row-reverse;
 }
