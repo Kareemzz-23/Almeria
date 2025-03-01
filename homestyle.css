@@ -119,7 +119,7 @@ header {
   .nav-links li {
       margin: 15px 0;
   }
-}
+
   .main-heading {
     font-size: 3rem; /* Reduce the font size for the main heading */
   }
@@ -139,9 +139,9 @@ header {
 
   .card-image img, .reverse-card .card-image img {
     max-width: 100%;
-    margin-bottom: 70px; /* Add space between image and text */
+    margin-bottom: 20px; /* Add space between image and text */
   }
-
+}
 
 /* Card Styling */
 .card {
