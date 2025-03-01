@@ -119,7 +119,6 @@ header {
   .nav-links li {
       margin: 15px 0;
   }
-}
 
   .main-heading {
     font-size: 3rem; /* Reduce the font size for the main heading */
@@ -131,7 +130,7 @@ header {
   }
 
   .card-text, .reverse-card .card-text {
-    font-size: 5px; /* Reduce the font size for card text */
+    font-size: 16px; /* Adjust the font size for card text */
   }
 
   .card-image, .reverse-card .card-image {
@@ -142,11 +141,6 @@ header {
     max-width: 100%;
     margin-bottom: 20px; /* Add space between image and text */
   }
-
-/* Foreground items */
-.foreground {
-  position: relative; /* Required for z-index to work */
-  z-index: 1; /* Bring the item in front of the background */
 }
 
 /* Card Styling */
@@ -193,7 +187,7 @@ header {
 .reverse-card .card-text {
   text-align: center;
   flex: 1;
-  font-size: 25px
+  font-size: 25px;
 }
 
 .reverse-card .card-image {
