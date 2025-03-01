@@ -137,7 +137,7 @@ header {
   }
 
   .card-text, .reverse-card .card-text {
-    font-size: 1rem; /* Reduce the font size for card text */
+    font-size: 10px; /* Reduce the font size for card text */
   }
 
   .card-image, .reverse-card .card-image {
@@ -229,7 +229,7 @@ footer {
 
 .footer-text {
   font-size: 14px; /* Font size for the footer text */
-  color: #000000; /* Change the text color to red */
+  color: #ffffff; /* Change the text color to red */
   margin-bottom: 10px; /* Margin below the footer text */
 }
 
