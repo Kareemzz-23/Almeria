@@ -65,9 +65,13 @@ header {
 /* Navigation Styling */
 /* Base styles */
 .navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    position: relative;
+    top: 15px; 
 }
 
 .hamburger-menu {
