@@ -66,32 +66,10 @@ header {
 /* Base styles */
 .navigation {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: black;
-  position: relative;
-  top: 15px; 
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.nav-links li a:hover {
-  color: #d1a481;
-}
-
-/* Hamburger menu styles */
 .hamburger-menu {
   display: none;
   flex-direction: column;
@@ -101,31 +79,47 @@ header {
 .hamburger-menu span {
   height: 3px;
   width: 25px;
-  background-color: white;
+  background: black;
   margin: 4px 0;
-  transition: all 0.3s ease;
+  transition: 0.4s;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
+  .hamburger-menu {
+      display: flex;
+  }
+
   .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
   }
 
   .nav-links.active {
-    display: flex;
+      display: flex;
   }
 
-  .hamburger-menu {
-    display: flex;
+  .nav-links li {
+      margin: 15px 0;
   }
-
-  .nav-links li a {
-    font-size: 1.2rem; /* Increase the font size for navigation links */
-  }
+}
 
   .main-heading {
     font-size: 3rem; /* Reduce the font size for the main heading */
@@ -137,7 +131,7 @@ header {
   }
 
   .card-text, .reverse-card .card-text {
-    font-size: 10px; /* Reduce the font size for card text */
+    font-size: 5px; /* Reduce the font size for card text */
   }
 
   .card-image, .reverse-card .card-image {
@@ -148,7 +142,6 @@ header {
     max-width: 100%;
     margin-bottom: 20px; /* Add space between image and text */
   }
-}
 
 /* Foreground items */
 .foreground {
