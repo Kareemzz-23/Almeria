@@ -139,9 +139,9 @@ header {
 
   .card-image img, .reverse-card .card-image img {
     max-width: 100%;
-    margin-bottom: 20px; /* Add space between image and text */
+    margin-bottom: 70px; /* Add space between image and text */
   }
-}
+
 
 /* Card Styling */
 .card {
