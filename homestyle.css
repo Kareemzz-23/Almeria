@@ -129,7 +129,7 @@ header {
   }
 
   .card, .reverse-card {
-    flex-direction: column-reverse; /* Stack image below text */
+    flex-direction: column; /* Stack text on top of the image */
     text-align: center;
   }
 
@@ -138,6 +138,7 @@ header {
   }
 
   .card-image, .reverse-card .card-image {
+    order: 1; /* Ensure image is below the text */
     text-align: center;
   }
 
@@ -147,62 +148,6 @@ header {
   }
 }
 
-/* Card Styling */
-.card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #d1a481;
-  padding: 30px;
-  margin: 30px;
-  border-radius: 10px;
-}
-
-.card-text {
-  flex: 1;
-  text-align: center;
-  color: white;
-  font-size: 25px;
-  padding: 7px;
-}
-
-.card-image {
-  flex: 1;
-  text-align: right;
-}
-
-.card-image img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-/* Reverse Card Styling */
-.reverse-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #d1a481;
-  padding: 30px;
-  margin: 30px;
-  border-radius: 10px;
-  flex-direction: row-reverse;
-}
-
-.reverse-card .card-text {
-  text-align: center;
-  flex: 1;
-  font-size: 25px;
-}
-
-.reverse-card .card-image {
-  flex: 1;
-  text-align: left;
-}
-
-.reverse-card .card-image img {
-  max-width: 100%;
-  border-radius: 10px;
-}
 
 
 /*footer styling*/
