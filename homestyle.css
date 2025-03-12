@@ -129,7 +129,7 @@ header {
   }
 
   .card, .reverse-card {
-    flex-direction: column; /* Stack image on top of text */
+    flex-direction: column-reverse; /* Stack image below text */
     text-align: center;
   }
 
@@ -143,7 +143,7 @@ header {
 
   .card-image img, .reverse-card .card-image img {
     max-width: 100%;
-    margin-bottom: 20px; /* Add space between image and text */
+    margin-top: 20px; /* Add space between text and image */
   }
 }
 
@@ -203,6 +203,7 @@ header {
   max-width: 100%;
   border-radius: 10px;
 }
+
 
 /*footer styling*/
 footer {
