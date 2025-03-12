@@ -127,25 +127,26 @@ header {
     font-size: 3rem; /* Reduce the font size for the main heading */
   }
 
-  .card, .reverse-card {
-    flex-direction: column; /* Stack text on top of the image */
-    text-align: center;
+  @media (max-width: 768px) {
+    .card, .reverse-card {
+      flex-direction: column; /* Stack text on top of the image */
+      text-align: center;
+    }
+  
+    .card-text, .reverse-card .card-text {
+      font-size: 16px; /* Adjust the font size for card text */
+    }
+  
+    .card-image, .reverse-card .card-image {
+      order: 1; /* Ensure image is below the text */
+      text-align: center;
+    }
+  
+    .card-image img, .reverse-card .card-image img {
+      max-width: 100%;
+      margin-top: 20px; /* Add space between text and image */
+    }
   }
-
-  .card-text, .reverse-card .card-text {
-    font-size: 16px; /* Adjust the font size for card text */
-  }
-
-  .card-image, .reverse-card .card-image {
-    order: 1; /* Ensure image is below the text */
-    text-align: center;
-  }
-
-  .card-image img, .reverse-card .card-image img {
-    max-width: 100%;
-    margin-top: 20px; /* Add space between text and image */
-  }
-}
 
 /* Card Styling */
 .card {
@@ -177,26 +178,30 @@ header {
 }
 
 /* Reverse Card Styling */
+/* Reverse Card Styling */
 .reverse-card {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column; /* Stack text above image */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
   background-color: #d1a481;
   padding: 30px;
   margin: 30px;
   border-radius: 10px;
-  flex-direction: row-reverse;
 }
 
 .reverse-card .card-text {
   text-align: center;
   flex: 1;
   font-size: 25px;
+  color: white; /* Match text color */
+  padding: 7px; /* Match padding */
 }
 
 .reverse-card .card-image {
   flex: 1;
-  text-align: left;
+  text-align: center; /* Center the image */
+  margin-top: 20px; /* Add space between text and image */
 }
 
 .reverse-card .card-image img {
@@ -233,4 +238,5 @@ footer {
 .social-media a img {
   width: 24px; /* Width of the social media icons */
   height: 24px; /* Height of the social media icons */
+}
 }
